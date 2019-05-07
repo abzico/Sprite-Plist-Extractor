@@ -188,7 +188,7 @@ def gen_png_from_data(filename, format):
         result_image.paste(rect_on_big, result_box, mask=0)
         if frame['rotated']:
             result_image = result_image.rotate(90)
-        outfile = (filename + '/' + k).replace('gift_', '') + '.png'
+        outfile = (filename + '/' + k).replace('gift_', '')
         dirname = os.path.dirname(outfile)
         if not os.path.isdir(dirname):
             os.makedirs(dirname)
